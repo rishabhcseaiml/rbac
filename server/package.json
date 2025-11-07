@@ -1,0 +1,22 @@
+{
+  "name": "rbac-mern-server",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "server": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "seed": "node src/seeds/seed.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

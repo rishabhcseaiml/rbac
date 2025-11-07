@@ -1,0 +1,62 @@
+/* Smooth background movement */
+@keyframes bgmove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.animate-bgmove {
+  animation: bgmove 12s ease-in-out infinite alternate;
+}
+
+/* Floating soft circles */
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-floating {
+  animation: floating 6s infinite ease-in-out;
+}
+
+.animate-floating-delayed {
+  animation: floating 8s infinite ease-in-out 1.5s;
+}
+
+/* Icon floating */
+@keyframes floatIcon {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(4deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.animate-float {
+  animation: floatIcon 4s infinite ease-in-out;
+}
+
+.animate-float-slow {
+  animation: floatIcon 6s infinite ease-in-out;
+}
+
+/* Card Fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.7s ease-out;
+}
+
+/* Shake on error */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-8px); }
+  50% { transform: translateX(8px); }
+  75% { transform: translateX(-8px); }
+  100% { transform: translateX(0); }
+}
+
+.animate-shake {
+  animation: shake 0.4s ease-in-out;
+}
